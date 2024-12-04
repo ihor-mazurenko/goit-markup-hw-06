@@ -1365,6 +1365,8 @@ input[type="checkbox"]:checked
   .modal-form-agreement-text {
     justify-content: flex-start;
   }
+  .modal-form-agreement-box {
+}
 }
 
 .modal-form-checkbox {
@@ -1396,6 +1398,10 @@ input[type="checkbox"]:focus-visible
   .modal-form-checkbox {
   outline: 2px solid #4d5ae5;
   outline-offset: 2px;
+}
+.modal-form-agreement-box {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .modal-form-agreement {
