@@ -465,16 +465,19 @@ color: #404bbf;
 
 /* #region Content */
 
+.content {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
 .content-container {
-    max-width: 320px;
+    max-width: 320px;    
 }
 
 .section-content {
     display: flex;
     flex-direction: column;
     gap: 72px;
-    padding-top: 96px;
-    padding-bottom: 96px;
+    
 }
 
 .icon-box {
@@ -500,6 +503,7 @@ color: #404bbf;
 }
 
 @media screen and (min-width: 768px) {
+ 
     .content-container {
         max-width: 768px;
     }
@@ -518,9 +522,12 @@ color: #404bbf;
 }
 
 @media screen and (min-width: 1158px) {
-    .section-content {
+    .content {
         padding-top: 120px;
         padding-bottom: 120px;
+    }
+    .section-content {
+
         max-width: 1440px;
     }
     .section-content {
@@ -977,9 +984,14 @@ color: #404bbf;
 
 @media screen and (min-width: 768px) {
     .foot-container {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 72px 24px;
+        align-content: center;
+        max-width: 584px;
            
     }
     
@@ -1019,23 +1031,21 @@ color: #404bbf;
 
 @media screen and (min-width: 1158px) {
     .foot {
-        line-height: 1.5;
-        padding: 100px 0;
+        padding: 100px 156px;
+    }
+   
+    .foot-container {
+        flex-wrap: nowrap;
+        gap: unset;
+        min-width: 1128px;
+        margin: 0;
+        padding: 0;
     }
     .foot-logo {
         margin-right: 120px;
-        margin-bottom: 0;
     }
     .foot-social {
         margin-right: 80px;
-        margin-bottom: 0;
-    }
-    .foot-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: baseline;
-        margin: 0 159px 0 156px;
     }
     .foot-input {
         width: 264px;
