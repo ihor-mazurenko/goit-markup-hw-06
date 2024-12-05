@@ -321,6 +321,7 @@ color: #404bbf;
     justify-content: flex-start;
     flex-direction: column;
     gap: 24px;
+    margin-bottom: 48px;
 }
 
 .menu-contacts-link {
@@ -365,7 +366,6 @@ color: #404bbf;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: row;
-    margin-top: 48px;
     gap: 40px;
 }
 /* #endregion */
