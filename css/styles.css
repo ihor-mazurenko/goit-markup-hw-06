@@ -1450,11 +1450,6 @@ input[type="checkbox"]:focus-visible
   margin-bottom: 24px;
 }
 
-.modal-form-agreement-link {
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
-  color: #4d5ae5;
-}
 
 .btm {
   display: block;
