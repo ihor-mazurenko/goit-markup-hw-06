@@ -1,6 +1,4 @@
-.hidden {
-    display: none;
-}
+
 /* #region Base */
 body {
     font-family: "Roboto", sans-serif;
@@ -388,6 +386,17 @@ color: #404bbf;
     margin-right: auto;
     align-items: center;
 }
+@media (min-device-pixel-ration: 2), 
+    (min-resolution: 192dpi), 
+    (min-resolution: 2dppx) {
+    .titel {
+        background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/Dark-bg_mob@2x.jpg);
+    }
+    }
 
 .title-text {
     font-weight: 700;
@@ -432,7 +441,7 @@ color: #404bbf;
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/hero/Dark-bg_tab@2x.jpg);
+        url(../images/hero/Dark-bg_tab@1x.jpg);
         }
     .title-text {
         font-size: 56px;
@@ -446,6 +455,17 @@ color: #404bbf;
     }   
     
 }
+@media (min-device-pixel-ration: 2), 
+    (min-resolution: 192dpi), 
+    (min-resolution: 2dppx) {
+    .titel {
+        background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/Dark-bg_tab@2x.jpg);
+    }
+    }
 
 @media screen and (min-width: 1158px) {
     .title {
@@ -461,6 +481,17 @@ color: #404bbf;
         margin-top: 48px;
     } 
 }
+@media (min-device-pixel-ration: 2), 
+    (min-resolution: 192dpi), 
+    (min-resolution: 2dppx) {
+    .titel {
+        background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/image_desk@2x.jpg);
+    }
+    }
 /* #endregion */
 
 /* #region Content */
@@ -1266,6 +1297,7 @@ color: #404bbf;
   }
 
 .modal-form-checbox {
+    flex-shrink: 0;
     display: inline-flex;
     justify-content: center;
     align-items: center;
